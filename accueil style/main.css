@@ -1,0 +1,88 @@
+main{
+    padding:1vw 10vw;
+}
+
+
+main img{
+    width :300px;
+    border: 3px solid rgb(16, 207, 201); 
+}
+
+.voiture-nouvelle{
+    width: fit-content;
+}
+
+#nouveauté{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(min-content, 400px));
+    gap:10px;
+    
+}
+#centraliser{
+    display:flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+#description h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1vw;
+    color:rgb(16, 207, 201);
+    text-decoration: underline;
+}
+
+#titre h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1vw;
+    color:rgb(16, 207, 201);
+    text-decoration: underline;
+}
+
+span{
+    color:blue;
+    font-weight: 500;
+   
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+.image-ruban{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image-ruban img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width:300px;
+    height: 200px;
+}
+
+.image-ruban img:hover{
+    border-color: purple;
+}
+
+.image-ruban p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: purple;
+    width: fit-content;
+    height: fit-content;
+    position:relative;
+    top:85%;
+    left:70%;
+    color:white;
+    padding: 0 10px;
+}
+
+.voiture-nouvelle>p{
+    text-align: center;
+    font-weight: 500;
+}
